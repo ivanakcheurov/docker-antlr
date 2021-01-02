@@ -9,9 +9,9 @@
 #
 
 FROM anapsix/alpine-java:8
-MAINTAINER Peter Vaczi <peter.vaczi@gmail.com>
+LABEL maintainer="ivan dot akcheurov plus docker at gmail dot com"
 
-ENV ANTLR_VERSION 4.6
+ENV ANTLR_VERSION 4.9
 ENV CLASSPATH .:/antlr-${ANTLR_VERSION}-complete.jar:$CLASSPATH
 
 ADD http://www.antlr.org/download/antlr-${ANTLR_VERSION}-complete.jar /
